@@ -36,8 +36,7 @@ Each frame is split into a grid of 16×16-pixel blocks, and POS runs on all 8,04
 
 pip install opencv-python numpy scipy matplotlib cupy-cuda12x[ctk]
 
-- `pulsecam_single_roi.py`: single-region pipeline with signal plot and spectrogram
-- `pulsecam_gpu.py`: all-region POS, CPU vs. GPU benchmark and heatmap
+ - `heartrate.ipynb`: full pipeline (single-region signal and spectrogram, then all-region CPU vs. GPU benchmark and heatmap)
 
 Set `VIDEO` to your own video path. For best results: phone on a stand, locked exposure, steady light, sit still for 30–60 s.
 
