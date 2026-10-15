@@ -34,11 +34,13 @@ Each frame is split into a grid of 16×16-pixel blocks, and POS runs on all 8,04
 
 ## Run it
 
+```bash
 pip install opencv-python numpy scipy matplotlib cupy-cuda12x[ctk]
+```
 
- - `heartrate.ipynb`: full pipeline (single-region signal and spectrogram, then all-region CPU vs. GPU benchmark and heatmap)
+Everything is in `heartrate.ipynb`: the single-region pipeline (signal plot and spectrogram), then the all-region POS with the CPU vs. GPU benchmark and SNR heatmap. It runs in Google Colab with a GPU runtime or locally with an NVIDIA GPU.
 
-Set `VIDEO` to your own video path. For best results: phone on a stand, locked exposure, steady light, sit still for 30–60 s.
+Set `VIDEO` at the top of the notebook to your own video path. For best results: phone on a stand, locked exposure, steady light, sit still for 30–60 s.
 
 ## Limitations
 
